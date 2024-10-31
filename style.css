@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+header nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    color: #ffa500;
+}
+
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza o conteúdo da seção */
+    gap: 200px; /* Espaço entre o texto e a imagem */
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+}
+
+.welcome-text {
+    max-width: 45%; /* Limita a largura do texto */
+    text-align: center; /* Alinha o texto à direita */
+}
+
+.welcome-text h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.welcome-text p {
+    font-size: 1.2rem;
+    color: #555;
+    font-style: italic;
+}
+
+.profile-image {
+    max-width: 45%; /* Limita a largura da imagem */
+    display: flex;
+    justify-content: flex-start; /* Alinha a imagem à esquerda */
+}
+
+.profile-photo {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Efeito cool no hover */
+#home:hover .welcome-text h1 {
+    color: #ffa500;
+}
+
+#home:hover .profile-photo {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+#about, #skills, #experience, #projects, #contact {
+    border-bottom: 1px solid #ddd;
+}
+
+.profile-photo {
+    border-radius: 35%;
+    width: 150px;
+    margin: 20px 0 0 0;
+}
+
+.experience-item, .project-item {
+    margin: 20px 0;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+#skills {
+    text-align: center; /* Centraliza o título e os itens dentro da seção */
+    padding: 20px;
+    transition: all 0.6s ease-in-out; /* Suaviza tanto a entrada quanto a saída */
+}
+
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style-type: none;
+    padding: 0;
+    justify-content: center; /* Centraliza os itens dentro do contêiner */
+}
+
+#skills li {
+    background-color: #f4f4f4;
+    padding: 10px 15px;
+    border-radius: 8px;
+    min-width: 100px;
+    text-align: center;
+}
+
+#language-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 5px 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#skills:hover {
+    background-color: #f0f8ff; /* Cor de fundo leve para destaque */
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+    transition: all 0.3s ease-in-out; /* Suaviza a transição */
+}
+
+#skills ul li:hover {
+    background-color: #ffa500; /* Cor de fundo de destaque para cada habilidade */
+    color: white; /* Cor do texto quando o mouse estiver sobre o item */
+    transition: background-color 0.6s ease; /* Suaviza a cor de fundo dos itens */
+    cursor: default
+}
+
